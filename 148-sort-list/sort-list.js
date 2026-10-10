@@ -13,16 +13,13 @@ var sortList = function(head) {
     let arr = [];
     let current = head;
 
-    // Step 1: Linked list ki values array mein store karo
     while (current !== null) {
         arr.push(current.val);
         current = current.next;
     }
 
-    // Step 2: Array ko sort karo
     arr.sort((a, b) => a - b);
 
-    // Step 3: Sorted values linked list mein wapas daalo
     current = head;
     let i = 0;
 
